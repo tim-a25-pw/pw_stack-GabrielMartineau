@@ -67,6 +67,13 @@
 
         a {
             color: var(--color-black);
+
+            transition: all 0.7s $ease-out-expo;
+
+            &:hover {
+                color: var(--color-primary);
+                text-decoration: none;
+            }
         }
 
         @media screen and (max-width: $breakpoint-lg) {

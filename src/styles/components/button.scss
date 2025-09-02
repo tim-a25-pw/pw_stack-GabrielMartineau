@@ -12,7 +12,11 @@
     font-weight: 900;
     font-family: var(--font-primary);
 
+    transition: all 0.7s $ease-out-expo;
+
     &:hover {
         text-decoration: none;
+        background-color: var(--color-primary);
+        color: var(--color-black);
     }
 }

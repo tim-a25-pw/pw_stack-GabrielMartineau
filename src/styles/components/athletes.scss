@@ -1,0 +1,78 @@
+.athletes {
+    padding: 125px 0;
+
+    text-align: right;
+
+    p {
+        margin: 0;
+        padding: 50px 0;
+    }
+}
+
+.cards {
+    text-align: left;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 30px;
+}
+
+.card {
+    position: relative;
+    &:hover {
+        .card-content {
+            opacity: 1;
+        }
+    }
+}
+
+.card-media {
+    position: relative;
+    overflow: hidden;
+
+    img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        display: block;
+    }
+}
+
+.card-content {
+    opacity: 0;
+
+    h3 {
+        font-size: var(--font-size-h2-small);
+        font-weight: 400;
+        align-self: flex-end;
+        padding-bottom: 5px;
+    }
+
+    background-image: linear-gradient(
+        to top,
+        rgba(0, 0, 0, 0.7),
+        rgba(0, 0, 0, 0) 100%
+    );
+
+    transition: all 0.7s $ease-out-expo;
+
+    margin: 0;
+    color: var(--color-white);
+    background-color: var(--color-secondary);
+    padding: 20px;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+
+    position: absolute;
+    bottom: 0;
+    left: 0;
+
+    .icon {
+        width: 70px;
+        height: 70px;
+        align-self: flex-end;
+    }
+}
