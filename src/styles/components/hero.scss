@@ -4,7 +4,7 @@
     color: var(--color-white);
 
     @media screen and (max-width: $breakpoint-lg) {
-        height: 70vh;
+        height: 80vh;
     }
 
     .bold {
@@ -36,9 +36,17 @@
         flex-direction: column;
         justify-content: center;
         height: 100%;
+
+        @media screen and (max-width: $breakpoint-lg) {
+            padding-top: 50px;
+            padding-bottom: 50px;
+        }
     }
 
     .hero-content {
         max-width: 60%;
+        @media screen and (max-width: $breakpoint-lg) {
+            max-width: 100%;
+        }
     }
 }
