@@ -10,11 +10,11 @@
         <script src="scripts/main.js" defer></script>
     </head>
 
-    <body>
+    <body data-component="Scrolly" data-no-repeat>
 
     <!-- Header -->
 
-    <header class="header">
+    <header class="header" data-component="Header">
         <div class="wrapper">
             <a class="logo" href="#">
                 <svg class="icon">
@@ -22,13 +22,19 @@
                 </svg>
                 tim québec
             </a>
-            <nav class="nav">
-                <ul>
+            <nav>
+                <ul class="nav-desktop">
                     <li><a href="#">Athlètes</a></li>
                     <li><a href="#">Disciplines</a></li>
                     <li><a href="#">Programmes</a></li>
                     <li><a href="#">Contact</a></li>
                 </ul>
+            </nav>
+
+            <nav class="nav-mobile">
+                <button class="header-toggle js-toggle"><svg class="icon">
+                    <use xlink:href="#icon-menu"></use>
+                </svg></button>
             </nav>
         </div>
     </header>
