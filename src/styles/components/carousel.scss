@@ -1,0 +1,25 @@
+.swiper-pagination-bullet {
+    --swiper-pagination-color: var(--color-primary);
+    --swiper-pagination-bullet-size: 30px;
+    --swiper-pagination-bullet-horizontal-gap: 10px;
+
+    background: var(--color-black);
+    opacity: 1;
+    border-radius: 100%;
+    transition: all 0.4s ease-out;
+
+    z-index: 5;
+}
+
+.swiper-vertical > .swiper-pagination-bullets,
+.swiper-pagination-vertical.swiper-pagination-bullets {
+    right: 2%;
+}
+
+.swiper-pagination-bullet-active {
+    background: var(--color-primary);
+}
+
+.swiper-full {
+    overflow: visible;
+}
